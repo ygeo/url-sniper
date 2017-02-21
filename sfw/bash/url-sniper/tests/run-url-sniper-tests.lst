@@ -1,5 +1,6 @@
 # lines startgin with # are ignored , the ## cuts the loop
 check-docker
+build-docker-image
 ##
 # check-perl-syntax
 # check-perl-modules-prerequisites

@@ -4,29 +4,27 @@
 	
 	# Purpose:
 	# ------------------------------------------------------
-	-- todo: what is the purpose of the doSpecBuildDockerImage function
+	to build a docker image from a Dockerfile for specific project
 
 	# Prequisites
 	# ------------------------------------------------------
-	-- todo: what are the prerequisites of the doSpecBuildDockerImage function
+	Installed and configured docker-engine
+   , Dockerfile under sfw/docker/proj/ dir
 
-	# Installation
-	# ------------------------------------------------------
-	-- todo: what are the required installations for the  
-		doSpecBuildDockerImage function to execute without errors
 
 	# Interdependancies
 	# ------------------------------------------------------
-	-- todo: what are the interdependancies for the  
-		doSpecBuildDockerImage function to execute without errors
-
+   
 	# Usage:
 	# ------------------------------------------------------
-	-- todo: how can be the doSpecBuildDockerImage used 
+   this action should be used as follows:
+   bash sfw/bash/url-sniper/url-sniper.sh -a build-docker-image
+
 
 	# Developent
 	# ------------------------------------------------------
-	-- todo: what issues, todos could be pointed for development
+	-- todo: add a simple Dockerfile under proj
+   -- todo: parametrize the proj into -p $proj
 
 	# Caveats:
 	# ------------------------------------------------------

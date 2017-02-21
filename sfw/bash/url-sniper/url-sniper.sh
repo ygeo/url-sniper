@@ -245,8 +245,12 @@ doExit(){
 # doLog "DEBUG some debug message"
 #------------------------------------------------------------------------------
 doLog(){
+   #echo start msg is
+   #echo "$*"
+   #echo stop  msg is 
    type_of_msg=$(echo $*|cut -d" " -f1)
-   msg="$(echo $*|cut -d" " -f2-)"
+   msg="$(echo "$*"|cut -d" " -f2-)"
+
    [[ $type_of_msg == DEBUG ]] && [[ $do_print_debug_msgs -ne 1 ]] && return
    [[ $type_of_msg == INFO ]] && type_of_msg="INFO "
 

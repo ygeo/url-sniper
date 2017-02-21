@@ -13,6 +13,7 @@ doTestBuildDockerImage(){
 	test -z "$sleep_interval" || sleep "$sleep_interval"
 	# add your action implementation code here ... 
 	# Action !!!
+   bash sfw/bash/url-sniper/url-sniper.sh -a build-docker-image
 
 	doLog "DEBUG STOP  doTestBuildDockerImage"
 }

@@ -13,6 +13,8 @@ doBuildDockerImage(){
 	test -z "$sleep_interval" || sleep "$sleep_interval"
 	# add your action implementation code here ... 
 	# Action !!!
+   cd "$product_instance_dir/sfw/docker/proj/url-sniper/"
+   docker build .
 
 	doLog "DEBUG STOP  doBuildDockerImage"
 }

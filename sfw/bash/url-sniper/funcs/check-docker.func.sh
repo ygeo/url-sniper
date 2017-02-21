@@ -1,8 +1,9 @@
 # sfw/bash/url-sniper/funcs/check-docker.func.sh
 
-# v1.0.9
+# v1.0.0
 # ---------------------------------------------------------
-# todo: add doCheckDocker comments ...
+# checks whether docker is installed , docker images
+# and the running containers and logs to the log file 
 # ---------------------------------------------------------
 doCheckDocker(){
 
@@ -13,15 +14,21 @@ doCheckDocker(){
 	test -z "$sleep_interval" || sleep "$sleep_interval"
 	# add your action implementation code here ... 
 	# Action !!!
-   docker_version=$(docker -v)
+   docker_version="$(docker -v)"
    ret=$?
    
-   test $ret -eq 0 && doLog "INFO using the following docker version: "".\n"
-   test $ret -eq 0 && doLog "INFO using $docker_version"
+   test $ret -eq 0 && doLog "INFO using the following docker version: "
+   test $ret -eq 0 && doLog "INFO $docker_version"
    test $ret -eq 0 && doLog "INFO ::"
    test $ret -eq 0 && doLog "INFO with the following images"
-   test $ret -eq 0 && docker_images=$(docker images)
+   test $ret -eq 0 && docker_images=`echo -e "\n\n\t""$(docker images)"`
    test $ret -eq 0 && doLog "INFO $docker_images"
+   test $ret -eq 0 && doLog "INFO ::"
+
+   test $ret -eq 0 && doLog "INFO ::"
+   test $ret -eq 0 && doLog "INFO with following running containers"
+   test $ret -eq 0 && docker_containers=`echo -e "\n\n\t""$(docker ps -a)"`
+   test $ret -eq 0 && doLog "INFO $docker_containers"
    test $ret -eq 0 && doLog "INFO ::"
 
    test $ret -ne 0 && doLog "ERROR docker engine is not installed or not in the PATH"
