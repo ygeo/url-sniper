@@ -13,7 +13,7 @@ doCheckPerlModulesPrerequisites(){
 	test -z "$sleep_interval" || sleep "$sleep_interval"
 	# add your action implementation code here ... 
 	# Action !!!
-   perl sfw/perl/url_shooter/script/url_shooter_preq_checker.pl
+   perl sfw/perl/url_sniper/script/url_sniper_preq_checker.pl
 
 	doLog "DEBUG STOP  doCheckPerlModulesPrerequisites"
 }

@@ -1,28 +1,28 @@
 # docs/txt/url-sniper/run-url-sniper/run-url-sniper.func.txt
 
-	doRunUrlShooter
+	doRunUrlSniper
 	
 	# Purpose:
 	# ------------------------------------------------------
-	-- todo: what is the purpose of the doRunUrlShooter function
+	-- todo: what is the purpose of the doRunUrlSniper function
 
 	# Prequisites
 	# ------------------------------------------------------
-	-- todo: what are the prerequisites of the doRunUrlShooter function
+	-- todo: what are the prerequisites of the doRunUrlSniper function
 
 	# Installation
 	# ------------------------------------------------------
 	-- todo: what are the required installations for the  
-		doRunUrlShooter function to execute without errors
+		doRunUrlSniper function to execute without errors
 
 	# Interdependancies
 	# ------------------------------------------------------
 	-- todo: what are the interdependancies for the  
-		doRunUrlShooter function to execute without errors
+		doRunUrlSniper function to execute without errors
 
 	# Usage:
 	# ------------------------------------------------------
-	-- todo: how can be the doRunUrlShooter used 
+	-- todo: how can be the doRunUrlSniper used 
 
 	# Development
 	# ------------------------------------------------------
@@ -30,7 +30,7 @@
 
 	# Caveats:
 	# ------------------------------------------------------
-	-- todo: what are the known caveats of the doRunUrlShooter functions
+	-- todo: what are the known caveats of the doRunUrlSniper functions
 
 
 

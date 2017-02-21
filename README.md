@@ -40,7 +40,7 @@ headers data as well
       # set the path to the postman export collection as json-file
       json_file=./data/json/example.postman_collection.json"
       # Action !!!
-      perl sfw/perl/url_shooter/script/url_shooter.pl --json-file "$json_file"
+      perl sfw/perl/url_sniper/script/url_sniper.pl --json-file "$json_file"
 
 ```
 

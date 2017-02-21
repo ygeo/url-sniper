@@ -15,7 +15,7 @@ doRunPerlTests(){
       perl "$test_file"
       doLog "INFO STOP  Component testing $test_file_name"
       test -z "$sleep_iterval" || sleep $sleep_iterval
-   done < <(find "$product_instance_dir/sfw/perl/url_shooter/t" -type f -name '*.t')
+   done < <(find "$product_instance_dir/sfw/perl/url_sniper/t" -type f -name '*.t')
 	
 	doLog "INFO STOP  : doRunPerlTests"
 }

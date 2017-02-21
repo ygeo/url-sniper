@@ -2,19 +2,19 @@
 
 # v1.0.9
 # ---------------------------------------------------------
-# todo: add doSpecRunUrlShooter comments ...
+# todo: add doSpecRunUrlSniper comments ...
 # ---------------------------------------------------------
-doSpecRunUrlShooter(){
+doSpecRunUrlSniper(){
 
-	doLog "DEBUG START doSpecRunUrlShooter"
+	doLog "DEBUG START doSpecRunUrlSniper"
 	
 	cat docs/txt/url-sniper/specs/perl/run-url-sniper.spec.txt
 	test -z "$sleep_interval" || sleep "$sleep_interval"
 	# add your action implementation code here ... 
 
-	doLog "DEBUG STOP  doSpecRunUrlShooter"
+	doLog "DEBUG STOP  doSpecRunUrlSniper"
 }
-# eof func doSpecRunUrlShooter
+# eof func doSpecRunUrlSniper
 
 
 # eof file: sfw/bash/url-sniper/funcs/run-url-sniper.spec.sh

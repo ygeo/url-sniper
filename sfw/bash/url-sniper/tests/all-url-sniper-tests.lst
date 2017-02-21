@@ -1,3 +1,6 @@
+check-docker
+build-docker-image
+run-docker-image
 create-full-7z-package
 create-full-package
 create-relative-7z-package
