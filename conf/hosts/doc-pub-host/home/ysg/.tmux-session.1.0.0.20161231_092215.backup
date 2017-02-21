@@ -1,0 +1,5 @@
+sess--url-sniper	win--run-isgpub	/opt/csitea/isg-pub/isg-pub.0.9.7.tst.ysg
+sess--url-sniper	win--vim--url-sniper	/opt/csitea/url-sniper/url-sniper.1.1.6.dev.ysg
+sess--url-sniper	win--tst--url-sniper	/opt/csitea/url-sniper/url-sniper.1.1.6.tst.ysg
+sess--url-sniper	win--prd--url-sniper	/opt/csitea/url-sniper/url-sniper.1.1.6.prd.ysg
+sess--url-sniper	win--git--url-sniper	/opt/csitea/url-sniper/url-sniper.1.1.6.git.ysg

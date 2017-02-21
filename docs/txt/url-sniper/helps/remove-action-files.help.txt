@@ -1,0 +1,41 @@
+# docs/txt/url-sniper/remove-action-files/remove-action-files.spec.txt
+
+	doSpecRemoveActionFiles
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to provide a quick oneliner for removing specified action files
+
+	# Prequisites
+	# ------------------------------------------------------
+	perl , bash
+
+	# Installation
+	# ------------------------------------------------------
+	install perl , bash 
+
+	# Interdependancies
+	# ------------------------------------------------------
+	you need to specify the action files to be removed in the : 
+	sfw/bash/url-sniper/tests/rem-url-sniper-actions.lst
+	list file
+	echo create-full-7z-package >> sfw/bash/url-sniper/tests/rem-url-sniper-actions.lst
+
+	# Usage:
+	# ------------------------------------------------------
+	bash sfw/bash/url-sniper/url-sniper.sh -a remove-action-files
+
+
+	# Issues
+	# ------------------------------------------------------
+	console output ?!:
+	bash: line 1: sfw/bash/url-sniper/funcs/action-to-remove.func.sh: No such file or directory
+
+	# Caveats:
+	# ------------------------------------------------------
+	of course your actions to be removed should not overlap with 
+	actions you do not want to remove , since we use grep ... 
+
+
+
+# eof file: docs/txt/url-sniper/remove-action-files/remove-action-files.spec.txt
