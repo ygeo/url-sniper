@@ -14,6 +14,9 @@ doBuildDockerImage(){
 	# add your action implementation code here ... 
 	# Action !!!
    cd "$product_instance_dir/sfw/docker/proj/url-sniper/"
+
+   # fail immediatelyy 
+   set -e
    docker build .
 
 	doLog "DEBUG STOP  doBuildDockerImage"
