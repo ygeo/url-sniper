@@ -8,6 +8,7 @@ sfw/bash/url-sniper/funcs/perl/run-perl-tests.func.sh
 sfw/bash/url-sniper/funcs/perl/run-url-sniper.func.sh
 sfw/docker/proj/url-sniper/Dockerfile
 sfw/docker/proj/url-sniper/Dockerfile.tpl
+docs/md/Features.md
 docs/txt/url-sniper/specs/generate-docker-file.spec.txt
 docs/txt/url-sniper/funcs/generate-docker-file.func.txt
 docs/txt/url-sniper/tests/generate-docker-file.test.txt
@@ -226,11 +227,9 @@ docs/txt/url-sniper/tmpl/%act%.%deliverable_type%.txt
 LICENSE
 meta
 meta/.dev.url-sniper
-meta/.dev.ysg-cheat-sheet
+meta/.tst.url-sniper
 meta/.git.url-sniper
 meta/.prd.url-sniper
-meta/.prd.ysg-cheat-sheets
-meta/.tst.url-sniper
 README.md
 sfw
 sfw/bash
