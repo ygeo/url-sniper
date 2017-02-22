@@ -9,6 +9,7 @@ sfw/bash/url-sniper/funcs/perl/run-url-sniper.func.sh
 sfw/docker/proj/url-sniper/Dockerfile
 sfw/docker/proj/url-sniper/Dockerfile.tpl
 docs/md/Features.md
+docs/md/Issues.md
 docs/txt/url-sniper/specs/generate-docker-file.spec.txt
 docs/txt/url-sniper/funcs/generate-docker-file.func.txt
 docs/txt/url-sniper/tests/generate-docker-file.test.txt
