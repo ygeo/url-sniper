@@ -41,7 +41,6 @@ RUN cpanm CPAN::Meta \
    File::Path \
    Data::Printer  \
    URI::Encode  \
-   WWW::Curl \
    HTTP::Response
 
 # and print them as well

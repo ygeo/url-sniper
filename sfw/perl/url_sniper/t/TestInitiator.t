@@ -21,23 +21,27 @@ my $ProductOwner 				= $objInitiator->doResolveMyProductOwner();
 my $ConfFile 					= $objInitiator->doResolveMyConfFile();
 my $HostName					= $objInitiator->doResolveMyHostName();
 
+# this might seem as very nasty, but responsibility should ALWAYS be personal
+my $ProductOwner				= $ENV{'USER'}  ; 
+
 $appConfig						= $objInitiator->get ('AppConfig'); 
 p($appConfig) ; 
 
-ok ( $ProductBaseDir 		eq '/opt/csitea' ) ; 
-ok ( $ProductDir 				eq '/opt/csitea/url-sniper' ) ; 
-ok ( $ProductInstanceDir 	eq '/opt/csitea/url-sniper/url-sniper.0.2.5.tst.ysg' ); 
-ok ( $ProductVersion 		eq '0.2.5' ); 
-ok ( $EnvironmentName 		eq 'url-sniper.0.2.5.tst.ysg' ); 
+ok ( $ProductBaseDir 		eq '/opt/futu' ) ; 
+ok ( $ProductDir 				eq '/opt/futu/url-sniper' ) ; 
+ok ( $ProductInstanceDir 	eq '/opt/futu/url-sniper/url-sniper.0.1.4.tst.' . $ProductOwner ); 
+ok ( $ProductVersion 		eq '0.1.4' ); 
+ok ( $EnvironmentName 		eq 'url-sniper.0.1.4.tst.' . $ProductOwner ); 
+# try to test always in the tst product instance and deploy on the other environments
 ok ( $ProductType 			eq 'tst' ) ;
 ok ( $ProductType 			ne 'dev' ) ;
 ok ( $ProductType 			ne 'prd' ) ;
-ok ( $ProductOwner 			eq 'ysg' ) ;
+ok ( $ProductOwner 			eq 'ygeo' ) ;
 my $cmd_out						= `hostname -s` ; 
 chomp ( $cmd_out ) ; 
 ok ( $HostName 				eq "$cmd_out" ) ;
 ok ( $ConfFile					eq 
-'/opt/csitea/url-sniper/url-sniper.0.2.5.tst.ysg/conf/url-sniper.' . $cmd_out . '.conf' ) ; 
+'/opt/futu/url-sniper/url-sniper.0.1.4.tst.ygeo/conf/url-sniper.' . $cmd_out . '.conf' ) ; 
 
 ok ( $ProductBaseDir 		eq $appConfig->{'ProductBaseDir'} ) ; 
 ok ( $ProductDir 				eq $appConfig->{'ProductDir'} ) ; 
