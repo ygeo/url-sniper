@@ -391,7 +391,7 @@ doParseConfFile(){
 	
 	# if we have perl apps they will share the same configuration settings with this one
 	test -f "$product_instance_dir/$wrap_name.$host_name.conf" \
-		&& conf_file="$product_instance_dir/$wrap_name.$host_name.conf"
+		&& conf_file="$product_instance_dir/conf/$wrap_name.$host_name.conf"
 
 	# yet finally override if passed as argument to this function
 	# if the the ini file is not passed define the default host independant ini file

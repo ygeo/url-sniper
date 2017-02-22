@@ -1,7 +1,7 @@
 # the starting image
 FROM ubuntu:trusty
 
-MAINTAINER ygeo <ygeo@futurice.ccom>
+MAINTAINER %product_instance_owner% <%product_instance_owner%@%organisation_name_lc%.ccom>
 
 
 # install the following libs and binaries 
@@ -55,10 +55,10 @@ ENV PATH=/home/appuser/bin:$PATH \
 # RUN git clone git@github.com:ygeo/url-sniper.git
 # labels
 # Set multiple labels at once, using line-continuation characters to break long lines
-LABEL vendor="Futurice" \
-      com.futurice.env="dev" \
-      com.futurice.version="0.1.5" \
-      com.futurice.release-date="2017-02-22 16:09:28"
+LABEL vendor="%organisation_name%" \
+      com.%organisation_name_lc%.env="%env_type%" \
+      com.%organisation_name_lc%.version="%product_version%" \
+      com.%organisation_name_lc%.release-date="%timestamp%"
 
 
 # resources: https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/
