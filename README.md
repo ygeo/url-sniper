@@ -15,7 +15,7 @@ Not implemented yet
     Not implemented yet
 
 ## 2. SETUP
-More desc, please â€¦ 
+More desc, please … 
 
           # go to a base dir ( could be /opt , /var or whatever you have rwx to )
           cd /tmp/
@@ -33,8 +33,7 @@ More desc, please â€¦
     
           # create the needed dir structure
           mkdir -p $base_dir/$org/$product_name/
-          mv -v ./$product_name
-$base_dir/$org/$product_name/"$product_name"."$ver".git."$my_initials"
+          mv -v ./$product_name $base_dir/$org/$product_name/"$product_name"."$ver".git."$my_initials"
     
           # and verify
           find $base_dir/$org/$product_name/"$product_name"."$ver".git."$my_initials" | less
@@ -52,5 +51,4 @@ $base_dir/$org/$product_name/"$product_name"."$ver".git."$my_initials"
           # Action !!!
           perl sfw/perl/url_sniper/script/url_sniper.pl --json-file "$json_file"
     
-
 
