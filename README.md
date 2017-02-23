@@ -9,11 +9,6 @@ headers data as well
 
     
 
-### 1.1. to run with docker .. 
-Not implemented yet
-
-    Not implemented yet
-
 ## 2. SETUP
 More desc, please … 
 
@@ -50,5 +45,10 @@ More desc, please …
           json_file=./data/json/example.postman_collection.json"
           # Action !!!
           perl sfw/perl/url_sniper/script/url_sniper.pl --json-file "$json_file"
+    
+
+## 3. MORE INFO
+You can get more info from the [Features](../docs/md/Features.md) document
+
     
 

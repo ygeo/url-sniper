@@ -53,6 +53,18 @@ Whenever you deploy a new instance with increased version of the tool you could 
 
     
 
+### 3.3. creation of full zip package
+You could create a single zip package containing the full source code of your application with the following call:
+
+    cd $produt_instance_dir
+    bash sfw/bash/url-sniper/url-sniper.sh -a create-full-package
+
+### 3.4. creation of full password protected package
+You could create a single passsword protected 7z package containing the full source code of your application with the following call:
+
+    cd $produt_instance_dir
+    bash sfw/bash/url-sniper/url-sniper.sh -a create-full-7z-package
+
 ## 4. PERL DEVELOPMENT RELATED
 This section contains the functionalities related to the perl development for the perl based components in the tool.
 

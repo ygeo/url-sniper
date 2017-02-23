@@ -23,6 +23,11 @@ The communication and marketing activities aim to present the end results of the
 
      
 
+#### 1.3.1. communication Internal testing needed 
+The tool should be tested internally within the team before presenting to ensure deployability and testability. 
+
+     
+
 ## 2. DESCRIPTION AND DOCUMENTATION
 This activity aims at providing clear, logical and up-to-date information on the state of the tool - what everyting is within the tool scope
 
@@ -31,6 +36,20 @@ This activity aims at providing clear, logical and up-to-date information on the
 ### 2.1. Creation of visual deliverables
 This seciton describes the creation of visual diagrams.
 Note that order of the execution of this activities is important
+
+     
+
+#### 2.1.1. create an overall concept diagram
+The diagram should answer the question visually:
+"What is this ?!"
+Should be presented in the ReadMe.md:
+Should have the Developer actor:
+should present:
+- docker
+- url-sniper
+- applications
+- urls
+- test runs
 
      
 
@@ -145,6 +164,16 @@ Test use cases with authentication - login, logout
 
      
 
+#### 5.2.6. Test the senzoit postman collection. 
+Test the senzoit postman collection. 
+
+     
+
+#### 5.2.7. Test the fonnecta caller cases
+Test the fonnecta caller cases
+
+     
+
 ## 6. QUALITY ASSURANCE
  
 
@@ -185,12 +214,18 @@ This section contains the tasks and activities
 
      
 
-### 7.3. Deployments to the qas environment
+### 7.3. Virtualization related activities
+Detach ui does not work for all the hosts … 
+The inconvinience for having to change the ips when physical hosts is in DHCP persists.
+
+     
+
+### 7.4. Deployments to the qas environment
 
 
      
 
-### 7.4. Deployments to the prd environment
+### 7.5. Deployments to the prd environment
 
 
      
@@ -200,18 +235,12 @@ This section contains the tasks and activities
 
      
 
-### 8.1. Virtualization related activities
-Detach ui does not work for all the hosts … 
-The inconvinience for having to change the ips when physical hosts is in DHCP persists.
-
-     
-
-### 8.2. Configuration management
+### 8.1. Configuration management
 Logical architecture
 
      
 
-### 8.3. Regular maintenance tasks
+### 8.2. Regular maintenance tasks
 Regular maintenance tasks
 
      
