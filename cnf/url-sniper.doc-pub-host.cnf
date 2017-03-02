@@ -1,0 +1,47 @@
+# file: cnf/url-sniper.doc-pub-host.cnf
+
+#use simple var_name=var_value syntax 
+
+# the organisation name 
+org_name=Futurice
+
+# the organisation name with low letters
+org_name_lc=futurice
+
+# The logging directory 
+LogDir = '%ProductInstanceDir%/dat/log'
+
+# the default Log file
+LogFile =            '%LogDir%/%ProductName%.log'
+# the default chars separating the time from the txt
+LogTimeToTextSeparator ='---'
+# whether or not to log to a file
+LogToFile =          1
+# the time format of the logging 
+TimeFormat =         'YYYY.MM.DD - hh:mm:ss'
+# the time format of the logging 
+
+# the log file
+LogFile=%LogDir%/%ProductName%.%YYYY%.%MM%.%DD%.log
+
+# Whether or not to print messages to STDOUT and / or STDERR
+PrintConsoleMsgs =               1
+
+# Whether or not to pring INFO messages
+PrintInfoMsgs =                  1                             
+
+# Whether or not to pring WARNING messages
+PrintWarningMsgs =               1                             
+
+# Whether or not to pring ERROR messages
+PrintErrorMsgs =                 1                             
+
+# Whether or not to pring DEBUG messages
+PrintDebugMsgs =                 1
+
+# Whether or not to pring TRACE messages
+PrintTraceMsgs =                 1 
+
+# the environment name of this product instance 
+EnvironmentName =   	'%ProductName%.%ProductVersion%.%ProductType%.%ProductOwner%'
+# eof file: cnf/url-sniper.doc-pub-host.cnf

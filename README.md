@@ -48,7 +48,7 @@ More desc, please …
     
 
 ## 3. MORE INFO
-You can get more info from the [Features](../docs/md/Features.md) document
+You can get more info from the [docs/md](docs/md/Features.md) document
 
     
 

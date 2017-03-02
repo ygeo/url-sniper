@@ -1,0 +1,34 @@
+# doc/txt/url-sniper/build-docker-image/build-docker-image.test.txt
+
+	doTestBuildDockerImage
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to test the building of the docker image
+
+	# Prequisites
+	# ------------------------------------------------------
+	docker installed ... 
+
+	# Installation & Configuration
+	# ------------------------------------------------------
+
+	# Interdependancies
+	# ------------------------------------------------------
+
+	# Usage:
+	# ------------------------------------------------------
+	-- todo: how can be the doTestBuildDockerImage used 
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: how-to verify programatically that the function has succeeded
+	-- todo: how-to register the test run result
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doTestBuildDockerImage functions
+
+
+
+# eof file: doc/txt/url-sniper/build-docker-image/build-docker-image.test.txt

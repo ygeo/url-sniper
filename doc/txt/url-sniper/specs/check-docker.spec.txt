@@ -1,0 +1,39 @@
+# doc/txt/url-sniper/check-docker/check-docker.spec.txt
+
+	doSpecCheckDocker
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to test whether the docker engine is installed & print 
+   the available images
+
+	# Prequisites
+	# ------------------------------------------------------
+	bash , perl
+
+	# Installation
+	# ------------------------------------------------------
+   install the docker engine for your platform    
+
+
+	# Interdependancies
+	# ------------------------------------------------------
+   the docker engine ... 
+
+	# Usage:
+	# ------------------------------------------------------
+   the usage should be as follows:
+   bash src/bash/url-sniper/url-sniper.sh -a check-docker
+ 
+
+	# Developent
+	# ------------------------------------------------------
+   	
+
+	# Caveats:
+	# ------------------------------------------------------
+   no known caveats so far ... 	
+
+
+
+# eof file: doc/txt/url-sniper/check-docker/check-docker.spec.txt

@@ -1,0 +1,34 @@
+# doc/txt/url-sniper/run-url-sniper/run-url-sniper.test.txt
+
+	doTestRunUrlSniper
+	
+	# Purpose:
+	# ------------------------------------------------------
+	test the actual run of the run-url-sniper.sh 
+	to read the google spreadsheet
+
+	# Prequisites
+	# ------------------------------------------------------
+	perl , bash , for the perl modules check by:
+	perl src/perl/url_sniper/url_sniper_preq_checker.pl
+
+	# Installation
+	# ------------------------------------------------------
+
+	# Usage:
+	# ------------------------------------------------------
+	-- add the action name to test in the 
+	src/bash/url-sniper/tests/run-url-sniper-tests.lst
+	file
+
+	# Development
+	# ------------------------------------------------------
+	
+
+	# Caveats:
+	# ------------------------------------------------------
+	none , known , so far ..
+
+
+
+# eof file: doc/txt/url-sniper/run-url-sniper/run-url-sniper.test.txt

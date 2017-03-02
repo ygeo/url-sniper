@@ -1,0 +1,28 @@
+# doc/txt/url-sniper/check-docker/check-docker.help.txt
+
+	doHelpCheckDocker
+	
+	# Purpose:
+	# ------------------------------------------------------
+	check whether docker is installed on your OS and if not
+   prompts for installation
+
+	# Prequisites
+	# ------------------------------------------------------
+	perl , bash
+
+	# Usage:
+	# ------------------------------------------------------
+   bash src/bash/url-sniper/url-sniper.sh -a ckeck-docker
+	
+
+	# Developent
+	# ------------------------------------------------------
+
+	# Caveats:
+	# ------------------------------------------------------
+   no known caveats so far ... 	
+
+
+
+# eof file: doc/txt/url-sniper/check-docker/check-docker.help.txt

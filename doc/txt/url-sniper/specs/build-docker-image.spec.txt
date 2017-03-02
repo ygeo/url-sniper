@@ -1,0 +1,35 @@
+# doc/txt/url-sniper/build-docker-image/build-docker-image.spec.txt
+
+	doSpecBuildDockerImage
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to build a docker image from a Dockerfile for specific project
+
+	# Prequisites
+	# ------------------------------------------------------
+	Installed and cnfigured docker-engine
+   , Dockerfile under src/docker/proj/ dir
+
+
+	# Interdependancies
+	# ------------------------------------------------------
+   
+	# Usage:
+	# ------------------------------------------------------
+   this action should be used as follows:
+   bash src/bash/url-sniper/url-sniper.sh -a build-docker-image
+
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: add a simple Dockerfile under proj
+   -- todo: parametrize the proj into -p $proj
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doSpecBuildDockerImage functions
+
+
+
+# eof file: doc/txt/url-sniper/build-docker-image/build-docker-image.spec.txt

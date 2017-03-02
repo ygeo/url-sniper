@@ -1,0 +1,34 @@
+# doc/txt/url-sniper/generate-docker-file/generate-docker-file.func.txt
+
+	doGenerateDockerFile
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to generate a docker file for the current product instance
+
+	# Prequisites
+	# ------------------------------------------------------
+   docker-engine installed	
+
+	# Installation
+	# ------------------------------------------------------
+   install the docker-engine for your OS 
+
+	# Interdependancies
+	# ------------------------------------------------------
+   docker-engine installed	
+
+	# Usage:
+	# ------------------------------------------------------
+   bash src/bash/url-sniper/url-sniper.sh -a generate-docker-file 	
+
+	# Developent
+	# ------------------------------------------------------
+
+	# Caveats:
+	# ------------------------------------------------------
+   none identified
+
+
+
+# eof file: doc/txt/url-sniper/generate-docker-file/generate-docker-file.func.txt

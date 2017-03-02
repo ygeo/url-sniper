@@ -1,0 +1,40 @@
+# doc/txt/url-sniper/check-docker/check-docker.test.txt
+
+	doTestCheckDocker
+	
+	# Purpose:
+	# ------------------------------------------------------
+	to test the check-docker action 
+
+	# Prequisites
+	# ------------------------------------------------------
+	bash, perl , the docker engine the check-docker.func.sh
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doTestCheckDocker function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+   the check-docker.func.sh
+
+	# Usage:
+	# ------------------------------------------------------
+	add the check-docker string as separate line in the 
+   src/bash/url-sniper/tests/run-url-sniper-tests.lst
+   file and call :
+   src/bash/url-sniper/test-url-sniper.sh
+
+
+	# Developent & Issues
+	# ------------------------------------------------------
+	- cleaner logging ... 
+
+	# Caveats:
+	# ------------------------------------------------------
+   no known caveats so far ... 	
+
+
+
+# eof file: doc/txt/url-sniper/check-docker/check-docker.test.txt

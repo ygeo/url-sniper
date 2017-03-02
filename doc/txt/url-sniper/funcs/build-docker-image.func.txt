@@ -1,0 +1,37 @@
+# doc/txt/url-sniper/build-docker-image/build-docker-image.func.txt
+
+	doBuildDockerImage
+	
+	# Purpose:
+	# ------------------------------------------------------
+	-- todo: what is the purpose of the doBuildDockerImage function
+
+	# Prequisites
+	# ------------------------------------------------------
+	-- todo: what are the prerequisites of the doBuildDockerImage function
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doBuildDockerImage function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+	-- todo: what are the interdependancies for the  
+		doBuildDockerImage function to execute without errors
+
+	# Usage:
+	# ------------------------------------------------------
+	-- todo: how can be the doBuildDockerImage used 
+
+	# Developent
+	# ------------------------------------------------------
+	-- todo: what issues, todos could be pointed for development
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doBuildDockerImage functions
+
+
+
+# eof file: doc/txt/url-sniper/build-docker-image/build-docker-image.func.txt

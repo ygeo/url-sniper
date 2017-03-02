@@ -1,0 +1,37 @@
+# doc/txt/url-sniper/run-url-sniper/run-url-sniper.func.txt
+
+	doRunUrlSniper
+	
+	# Purpose:
+	# ------------------------------------------------------
+	-- todo: what is the purpose of the doRunUrlSniper function
+
+	# Prequisites
+	# ------------------------------------------------------
+	-- todo: what are the prerequisites of the doRunUrlSniper function
+
+	# Installation
+	# ------------------------------------------------------
+	-- todo: what are the required installations for the  
+		doRunUrlSniper function to execute without errors
+
+	# Interdependancies
+	# ------------------------------------------------------
+	-- todo: what are the interdependancies for the  
+		doRunUrlSniper function to execute without errors
+
+	# Usage:
+	# ------------------------------------------------------
+	-- todo: how can be the doRunUrlSniper used 
+
+	# Development
+	# ------------------------------------------------------
+	-- todo: what issues, todos could be pointed for development
+
+	# Caveats:
+	# ------------------------------------------------------
+	-- todo: what are the known caveats of the doRunUrlSniper functions
+
+
+
+# eof file: doc/txt/url-sniper/run-url-sniper/run-url-sniper.func.txt

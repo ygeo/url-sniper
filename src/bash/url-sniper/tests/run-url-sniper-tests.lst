@@ -1,0 +1,14 @@
+# lines startgin with # are ignored , the ## cuts the loop
+# run-perl-tests
+# check-perl-modules-prerequisites
+# check-perl-syntax
+# check-docker
+# generate-docker-file
+# build-docker-image
+run-url-sniper
+##
+# create-full-7z-package
+# create-relative-7z-package
+# create-full-package
+# gmail-package
+# create-relative-package
