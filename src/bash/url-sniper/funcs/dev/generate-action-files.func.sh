@@ -73,10 +73,7 @@ doGenerateActionFiles(){
 			done< <(echo 'spec' 'func' 'test' 'help' 'none')
 
 		doLog "DEBUG STOP  :: checking action: $act"
-
-      # and add them to the include file of t this environment
-      find . | grep -i "$act" | cut -c 3- >> "$product_instance_dir/"'meta/.'"$env_type"."$wrap_name"
-
+		
 	); 
 	done< <(cat src/bash/$wrap_name/tests/all-url-sniper-tests.lst)
 	

@@ -5,7 +5,7 @@
 	# Purpose:
 	# ------------------------------------------------------
 	to create a 7z file with all the files specified in the 
-	meta/.<<env_type>>.url-sniper with their relative file paths 
+	met/.<<env_type>>.url-sniper with their relative file paths 
 	except for the file paths matching the Perl pattern specified 
 	by the # perl_ignore_file_pattern=<<the Perl regex used to ignore files>>
 	so that the user could deploy the product by :

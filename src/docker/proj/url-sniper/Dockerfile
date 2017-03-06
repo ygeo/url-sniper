@@ -57,8 +57,8 @@ ENV PATH=/home/appuser/bin:$PATH \
 # Set multiple labels at once, using line-continuation characters to break long lines
 LABEL vendor="Futurice" \
       com.futurice.env="dev" \
-      com.futurice.version="0.1.9" \
-      com.futurice.release-date="2017-03-02 21:55:12"
+      com.futurice.version="0.2.0" \
+      com.futurice.release-date="2017-03-03 15:12:42"
 
 
 # resources: https://doc.docker.com/engine/userguide/eng-image/dockerfile_best-practices/

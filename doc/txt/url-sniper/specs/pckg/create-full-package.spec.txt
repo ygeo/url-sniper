@@ -5,7 +5,7 @@
 	# Purpose:
 	# ------------------------------------------------------
 	to create a zip file with all the files specified in the 
-	meta/.<<env_type>>.url-sniper with their full file
+	met/.<<env_type>>.url-sniper with their full file
 	except for the file paths matching the Perl pattern specified 
 	by the # perl_ignore_file_pattern=<<the Perl regex used to ignore files>>
 	paths so that 
@@ -18,10 +18,10 @@
 	# Interdependancies
 	# ------------------------------------------------------
 	should be able to specify different file paths containing file :
-	bash src/bash/url-sniper/url-sniper.sh -a create-full-package -i meta/.deploy
+	bash src/bash/url-sniper/url-sniper.sh -a create-full-package -i met/.deploy
 
 	should be able to send the package to a pre-cnfigured e-mail
-	bash src/bash/url-sniper/url-sniper.sh -a create-full-package -i meta/.deploy
+	bash src/bash/url-sniper/url-sniper.sh -a create-full-package -i met/.deploy
 
 	# Usage:
 	# ------------------------------------------------------

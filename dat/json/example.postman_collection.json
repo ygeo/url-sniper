@@ -25,7 +25,7 @@
 					}
 				],
 				"body": {},
-				"description": ""
+				"description": "expected_http_code = 200; expected_body_content contains google"
 			},
 			"response": []
 		},

@@ -36,7 +36,7 @@ doBackupFile(){
 
 	#define default vars
 	test -z $include_file         && \
-		include_file="$product_instance_dir/meta/.$env_type.$wrap_name"
+		include_file="$product_instance_dir/met/.$env_type.$wrap_name"
 
 	# relative file path is passed turn it to absolute one 
 	[[ $include_file == /* ]] || include_file=$product_instance_dir/$include_file

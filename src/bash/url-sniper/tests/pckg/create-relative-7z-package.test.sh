@@ -16,4 +16,3 @@ doTestCreateRelative7zPackage(){
 }
 #eof test doCreaterelative7zPackage
 
-#$test_run_report_file

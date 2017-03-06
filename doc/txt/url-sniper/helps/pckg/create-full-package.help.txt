@@ -6,7 +6,7 @@
 	this will create the full package into your production version dir: $product_dir
 	if you have cnfigured the network_backup_dir in cnf file it will be also copied 
 	to it -> $network_backup_dir
-	You must specify the files to be be included in the full package from the meta/url-sniper.dev 
+	You must specify the files to be be included in the full package from the met/url-sniper.dev 
 	file
 
 	# Prequisites and installations
@@ -17,12 +17,12 @@
 	# ------------------------------------------------------
 	you might specify different file paths containing file 
 	as follows: 
-	bash src/bash/url-sniper/url-sniper.sh -a create-full-package -i meta/.deploy
+	bash src/bash/url-sniper/url-sniper.sh -a create-full-package -i met/.deploy
 
 	# Usage:
 	# ------------------------------------------------------
 	bash src/bash/url-sniper/url-sniper.sh -a create-full-package
-	bash src/bash/url-sniper/url-sniper.sh -a create-full-package -i meta/.prd.url-sniper
+	bash src/bash/url-sniper/url-sniper.sh -a create-full-package -i met/.prd.url-sniper
 
 	# Developent
 	# ------------------------------------------------------

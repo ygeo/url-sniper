@@ -22,7 +22,6 @@ doTestGenerateDockerFile(){
    
    ret=$?
 
-
    test -f "$current_docker_file" && doLog "generated $current_docker_file"
 	doLog "DEBUG STOP  doTestGenerateDockerFile"
 }

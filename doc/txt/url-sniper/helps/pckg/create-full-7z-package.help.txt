@@ -3,7 +3,7 @@
 	# Purpose:
 	# ------------------------------------------------------
 	the create-full-7z-package function crates a 7z package
-	from relative file paths in the meta/.<<curr_env>>.url-sniper file 
+	from relative file paths in the met/.<<curr_env>>.url-sniper file 
 	product dir and if cnfigured into the network backup dir, like:
 	url-sniper.1.0.8.dev.20160929_164741.lp-nl-host.7z
 
@@ -19,7 +19,7 @@
 	# Interdependancies
 	# ------------------------------------------------------
 	you might helpify different file paths containing file :
-	bash src/bash/url-sniper/url-sniper.sh -a create-full-7z-package -i meta/.deploy
+	bash src/bash/url-sniper/url-sniper.sh -a create-full-7z-package -i met/.deploy
 
 	# Usage:
 	# ------------------------------------------------------

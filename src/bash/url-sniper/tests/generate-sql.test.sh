@@ -21,4 +21,3 @@ doTestGenerateSQL(){
 
 
 # eof file: src/bash/url-sniper/funcs/generate-sql.test.sh
-#$test_run_report_file

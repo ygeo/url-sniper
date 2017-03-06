@@ -8,8 +8,6 @@ doTestCloneToApp(){
 
 	doLog "DEBUG START doTestCloneToApp"
 	
-	cat doc/txt/url-sniper/tests/dev/clone-to-app.test.txt
-	sleep 2
 	# add your action implementation code here ... 
    bash src/bash/url-sniper/url-sniper.sh -a to-app=foobar
 
@@ -19,4 +17,3 @@ doTestCloneToApp(){
 
 
 # eof file: src/bash/url-sniper/funcs/clone-to-app.test.sh
-#$test_run_report_file

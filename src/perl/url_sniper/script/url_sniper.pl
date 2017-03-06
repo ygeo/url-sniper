@@ -93,6 +93,7 @@ sub doInitialize {
 
    $objInitiator 		= 'UrlSniper::App::Utils::Initiator'->new();
    $appConfig 			= $objInitiator->get('AppConfig') ; 
+
    p ( $appConfig  ) ; 
    $objConfigurator 	
       = 'UrlSniper::App::Utils::Configurator'->new( $objInitiator->{'ConfFile'} , \$appConfig ) ; 
@@ -105,7 +106,7 @@ sub doInitialize {
    $objLogger->doLogInfoMsg ( "STOP  LOGGING SETTINGS ") ; 
 
 	GetOptions(	
-	   "rdbms_type:s"		=>\$rdbms_type
+	     "rdbms_type:s"		=>\$rdbms_type
 	   , "json-file:s"		=>\$json_file
    );
 }

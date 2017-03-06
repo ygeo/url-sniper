@@ -7,14 +7,13 @@
 doCreateFull7zPackage(){
 
 	doLog "INFO START  ::: create-full-7z-package" ;
-	flag_completed=0
 	
 	which 7z 2>/dev/null || { echo >&2 "The 7z binary is missing ! Aborting ..."; exit 1; }
 
 	test -z "$pcking_pw" && doExit 1 " Empty packaging password-> do export pcking_pw=secret !!!"
 	#define default vars
 	test -z $include_file         && \
-		include_file="$product_instance_dir/meta/.$env_type.$wrap_name"
+		include_file="$product_instance_dir/met/.$env_type.$wrap_name"
 
 	# relative file path is passed turn it to absolute one 
 	[[ $include_file == /* ]] || include_file=$product_instance_dir/$include_file
@@ -69,8 +68,6 @@ doCreateFull7zPackage(){
 	doLog "INFO created the following full 7z package:"
 	doLog "INFO $zip_7z_file"
 
-	flag_completed=1
-	
 	test -d $network_backup_dir && doRunCmdAndLog "cp -v $zip_7z_file $network_backup_dir/"
 
 	doLog "INFO STOP  ::: create-full-7z-package" ;

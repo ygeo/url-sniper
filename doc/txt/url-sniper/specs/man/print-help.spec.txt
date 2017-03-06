@@ -26,7 +26,7 @@ doPrintHelp(){
       #--------------------------------------------------------
 		bash $0 -a create-deployment-package
 
-		You must specify the files to be be included in the full package from the meta/url-sniper.dev 
+		You must specify the files to be be included in the full package from the met/url-sniper.dev 
 		file
       
 		6. to create a relative package
@@ -35,7 +35,7 @@ doPrintHelp(){
       #--------------------------------------------------------
 		bash $0 -a create-relative-package
 
-		You must specify the files to be be included in the full package from the meta/url-sniper.dev 
+		You must specify the files to be be included in the full package from the met/url-sniper.dev 
 		file
       
 		4. to clone the same version of your product into dev,tst,prd enviroments

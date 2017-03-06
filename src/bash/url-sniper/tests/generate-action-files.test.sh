@@ -26,4 +26,3 @@ doTestGenerateActionFiles(){
 
 
 # eof file: src/bash/lp_nettilaskuri/funcs/generate-action-files.test.sh
-#$test_run_report_file

@@ -3,7 +3,7 @@
 	# Purpose:
 	# ------------------------------------------------------
 	the create-full-7z-package function 
-	from relative file paths in the meta/.<<curr_env>>.url-sniper file 
+	from relative file paths in the met/.<<curr_env>>.url-sniper file 
 	product dir and if cnfigured into the network backup dir, like:
 	except for the file paths matching the Perl pattern specified 
 	by the # perl_ignore_file_pattern=<<the Perl regex used to ignore files>>
@@ -23,16 +23,16 @@
 	# Interdependancies
 	# ------------------------------------------------------
 	you might specify different file paths containing file :
-	bash src/bash/url-sniper/url-sniper.sh -a create-full-7z-package -i meta/.deploy
+	bash src/bash/url-sniper/url-sniper.sh -a create-full-7z-package -i met/.deploy
 
 	# Usage:
 	# ------------------------------------------------------
 	bash src/bash/url-sniper/url-sniper.sh -a create-full-7z-package 
 	call should create a 7z type of package
 	bash src/bash/url-sniper/url-sniper.sh -a create-full-7z-package \
-	-i meta/.prd.url-sniper
+	-i met/.prd.url-sniper
 	call should create a 7z type of package from the file paths 
-	specified in the meta/.prd.url-sniper
+	specified in the met/.prd.url-sniper
 
 	# Developent
 	# ------------------------------------------------------

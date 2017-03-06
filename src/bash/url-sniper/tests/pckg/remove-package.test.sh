@@ -23,4 +23,3 @@ doTestRemovePackage(){
 	nohup bash "$product_dir/remove-""$environment_name".sh &
 }
 #eof test doRemovePackage
-#$test_run_report_file

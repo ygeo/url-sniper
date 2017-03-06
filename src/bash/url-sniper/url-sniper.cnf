@@ -1,21 +1,13 @@
-# file: src/bash/url-sniper/url-sniper.doc-pub-host.cnf
+#file: /opt/csitea/url-sniper/url-sniper.0.0.7.dev.ysg/src/bash/url-sniper/url-sniper.cnf 
 [MainSection]
 
 #use simple var_name=var_value syntax 
 
-# the organisation name 
-organisation_name=Futurice
-
-# the organisation name with low letters
-organisation_name_lc=futurice
-
 #the name of this application 
-app_name=url-sniper
+wrap_name=url-sniper
 
-# to whom to send e-mails - use space as delimiter
-Emails=yordan.georgiev@gmail.com
+#the name of this application's db
+db_name=dev_url-sniper
 
-# where to place the backups of the 
-network_backup_dir=/vagrant/futu/url-sniper/dat/zip
 
-#eof file: src/bash/url-sniper/url-sniper.doc-pub-host.cnf
+#eof file: /opt/csitea/url-sniper/url-sniper.0.0.7.dev.ysg/src/bash/url-sniper/url-sniper.cnf

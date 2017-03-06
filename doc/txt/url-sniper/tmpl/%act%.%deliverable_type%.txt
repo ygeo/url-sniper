@@ -10,7 +10,7 @@
 	# ------------------------------------------------------
 	-- todo: what are the prerequisites of the %full_func% function
 
-	# Installation & Configuration
+	# Installation
 	# ------------------------------------------------------
 	-- todo: what are the required installations for the  
 		%full_func% function to execute without errors

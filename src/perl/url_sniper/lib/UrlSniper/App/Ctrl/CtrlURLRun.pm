@@ -96,14 +96,14 @@ sub doRunURLs {
             my $objUrlSniper    = 'UrlSniper::App::Data::UrlRunner'->new( \$appConfig ) ; 
             my $url              = $url_item->{ 'request' }->{ 'url'} ; 
             my $http_method      = $url_item->{ 'request'}->{'method'} ; 
+            my $url_description  = $url_item->{ 'request'}->{'description'} ; 
             my @lst_hdr_pair     = $url_item->{ 'request'}->{'header'} ; 
             my $headers          = {} ; 
             
             print "\n\n" if $ModuleDebug == 1 ; 
             p ( $url_item->{ 'request'}->{'header'} ) if $ModuleDebug == 1 ; 
             print "\n\n" if $ModuleDebug == 1 ; 
-
-
+            $objLogger->doLogDebugMsg ( "\$url_description : " . $url_description ) ; 
 
             foreach my $hdr_pair_list_item ( $lst_hdr_pair[0] ) {
 
@@ -131,16 +131,16 @@ sub doRunURLs {
             }
 
 
-            my $got              = undef ; 
-            my $expected         = 200 ; 
-            my $test_name        = "testing that the ret from the call is $expected to the url: $url" ; 
+            my $got                 = undef ; 
+            my $expected_http_code  = 200 ; 
+            my $test_name           = "testing that the ret from the call is $expected_http_code to the url: $url" ; 
 
             my ( $ret , $response_code , $response_body , $response_content )  = () ; 
             ( $ret , $response_code , $response_body , $response_content ) 
                = $objUrlSniper->doRunURL( $http_method , $url , $headers );
 
             $got = $response_code ; 
-            cmp_ok($got, '==', $expected, $test_name);
+            cmp_ok($got, '==', $expected_http_code, $test_name);
 
          }
       }

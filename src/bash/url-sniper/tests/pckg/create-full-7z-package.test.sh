@@ -22,4 +22,3 @@ doTestCreateFull7zPackage(){
 
 
 # eof file: src/bash/url-sniper/funcs/create-full-7z-package.test.sh
-#$test_run_report_file
