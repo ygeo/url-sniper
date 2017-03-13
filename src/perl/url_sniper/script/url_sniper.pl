@@ -78,6 +78,9 @@ sub main {
 	print " url_sniper.pl START MAIN \n " ; 
    doInitialize();	
 	my $obCtrlURLRun 				= 'UrlSniper::App::Ctrl::CtrlURLRun'->new ( \$appConfig ) ; 
+   $objLogger->doLogInfoMsg ( "using the following json_file " ) ; 
+   $objLogger->doLogInfoMsg ( $json_file ) ; 
+
    $obCtrlURLRun->doRunURLs( $json_file );
    
 	$objLogger->doLogInfoMsg ( "STOP  MAIN") ; 

@@ -72,9 +72,9 @@ sub doRunURL {
    $curl->setopt(WWW::Curl::Easy::CURLOPT_URL(), "$url" );
    ## Set up the standard GET/POST request options
    $curl->setopt(WWW::Curl::Easy::CURLOPT_VERBOSE, 0);                  # Disable verbosity
-   $curl->setopt(WWW::Curl::Easy::CURLOPT_HEADER, 0);                   # Don't include header in body 
+   $curl->setopt(WWW::Curl::Easy::CURLOPT_HEADER, 1);                   # Don't include header in body 
    $curl->setopt(WWW::Curl::Easy::CURLOPT_NOPROGRESS, 1);               # Disable internal progress meter
-   $curl->setopt(WWW::Curl::Easy::CURLOPT_FOLLOWLOCATION, 0);           # Disable automatic location redirects
+   $curl->setopt(WWW::Curl::Easy::CURLOPT_FOLLOWLOCATION, 1);           # Disable automatic location redirects
    $curl->setopt(WWW::Curl::Easy::CURLOPT_FAILONERROR, 0);              # Setting this to true fails on HTTP error
    $curl->setopt(WWW::Curl::Easy::CURLOPT_SSL_VERIFYPEER, 0);           # Ignore bad SSL
    $curl->setopt(WWW::Curl::Easy::CURLOPT_SSL_VERIFYHOST, 0);           # Ignore bad SSL
@@ -82,11 +82,13 @@ sub doRunURL {
    # $curl->setopt(WWW::Curl::Easy::CURLOPT_ENCODING, 'gzip');            # Allow gzip compressed pages
 
    if ( $headers ) { 
+	my @hdrs = () ; 
       for my $key ( sort ( keys %$headers )) {
          my $header_name = $key ; 
          my $header_val = $headers->{ "$key" } ; 
-         $curl->setopt(WWW::Curl::Easy::CURLOPT_HTTPHEADER() , [ $header_name . $header_val ]  );
+			push ( @hdrs , "$header_name" . ':' . "$header_val" );		
       }
+      $curl->setopt(WWW::Curl::Easy::CURLOPT_HTTPHEADER() , \@hdrs  );
    }
 
    if ( $http_method_type eq 'POST' ) {
@@ -111,7 +113,7 @@ sub doRunURL {
       $response_code = $curl->getinfo(CURLINFO_HTTP_CODE);
       $response_content = HTTP::Response->parse( "$response_body" ) ; 
       $response_content = $response_content->content;
-
+		$objLogger->doLogInfoMsg ( 'response_content: ' . "$response_content" ) ; 
       #my $json_str = HTTP::Response->parse($response_body);
       # print("Received response: $response_body\n");
       #p($response_body);

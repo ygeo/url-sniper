@@ -4,10 +4,11 @@ package UrlSniper::App::Ctrl::CtrlURLRun ;
 
 	my $VERSION = '1.0.0';    #doc at the end
 
+	our $module_trace = 1 ; 
+
 	require Exporter;
 	our @ISA = qw(Exporter);
 	our $AUTOLOAD =();
-	our $ModuleDebug = 0 ; 
 	use AutoLoader;
 
 	use Cwd qw/abs_path/;
@@ -25,7 +26,6 @@ package UrlSniper::App::Ctrl::CtrlURLRun ;
    use UrlSniper::App::Data::UrlRunner ; 
    use UrlSniper::App::Utils::ETL::JSONHandler ; 
 	
-   our $ModulDebug               = 0 ; 
 	our $appConfig						= {} ; 
 	our $RunDir 						= '' ; 
 	our $ProductBaseDir 				= '' ; 
@@ -71,6 +71,7 @@ sub doRunURLs {
 
    # todo : remove 
    # $json_file              = "$ProductInstanceDir/dat/json/example.postman_collection.json" ; 
+   $json_file              = '/vagrant/SENZOIT-POSTMAN-COLLECTION.postman_collection.json' ; 
 
    $objLogger->doLogInfoMsg ( $msg ) ; 
 
@@ -89,10 +90,10 @@ sub doRunURLs {
       # -- foreach url do run it
       foreach my $url_list_item ( @url_items_list ) {
 
-         # debug p ( $url_list_item ) if $ModuleDebug == 1 ; 
+         # debug p ( $url_list_item ) if $module_trace == 1 ; 
          
          foreach my $url_item ( @$url_list_item ) {
-            p ( $url_item ) if $ModuleDebug == 1 ; 
+            p ( $url_item ) if $module_trace == 1 ; 
             my $objUrlSniper    = 'UrlSniper::App::Data::UrlRunner'->new( \$appConfig ) ; 
             my $url              = $url_item->{ 'request' }->{ 'url'} ; 
             my $http_method      = $url_item->{ 'request'}->{'method'} ; 
@@ -100,9 +101,9 @@ sub doRunURLs {
             my @lst_hdr_pair     = $url_item->{ 'request'}->{'header'} ; 
             my $headers          = {} ; 
             
-            print "\n\n" if $ModuleDebug == 1 ; 
-            p ( $url_item->{ 'request'}->{'header'} ) if $ModuleDebug == 1 ; 
-            print "\n\n" if $ModuleDebug == 1 ; 
+            print "\n\n" if $module_trace == 1 ; 
+            p ( $url_item->{ 'request'}->{'header'} ) if $module_trace == 1 ; 
+            print "\n\n" if $module_trace == 1 ; 
             $objLogger->doLogDebugMsg ( "\$url_description : " . $url_description ) ; 
 
             foreach my $hdr_pair_list_item ( $lst_hdr_pair[0] ) {
@@ -114,9 +115,9 @@ sub doRunURLs {
 
                foreach my $header_pair ( @$hdr_pair_list_item ) {
                   next unless ( $header_pair ) ; 
-                  print 'start $header_pair' . "\n" if $ModuleDebug == 1 ; 
-                  p ( $header_pair ) if $ModuleDebug == 1 ; 
-                  print 'stop  $header_pair' . "\n" if $ModuleDebug == 1 ; 
+                  print 'start $header_pair' . "\n" if $module_trace == 1 ; 
+                  p ( $header_pair ) if $module_trace == 1 ; 
+                  print 'stop  $header_pair' . "\n" if $module_trace == 1 ; 
                   my %hs_header_pair   = %$header_pair ; 
                   my $key           = $hs_header_pair{ 'key' } ; 
                   my $value         = $hs_header_pair{ 'value' } ; 
@@ -138,6 +139,10 @@ sub doRunURLs {
             my ( $ret , $response_code , $response_body , $response_content )  = () ; 
             ( $ret , $response_code , $response_body , $response_content ) 
                = $objUrlSniper->doRunURL( $http_method , $url , $headers );
+
+				$objLogger->doLogDebugMsg ( "response_content: " . $response_body)
+					if $module_trace == 1 ; 
+
 
             $got = $response_code ; 
             cmp_ok($got, '==', $expected_http_code, $test_name);

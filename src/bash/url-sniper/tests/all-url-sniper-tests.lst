@@ -1,23 +1,9 @@
-# lines startgin with # are ignored , the ## cuts the loop
-run-perl-tests
-check-perl-modules-prerequisites
-check-perl-syntax
-check-docker
-generate-docker-file
-build-docker-image
-run-url-sniper
 create-full-7z-package
-create-relative-7z-package
 create-full-package
-log-test-run-entry
-gmail-package
+create-relative-7z-package
 create-relative-package
-create-full-package
-log-test-run-entry
-gmail-package
-create-full-7z-package
-create-relative-7z-package
 clone-to-app
+gmail-package
 morph-dir
 change-env-type
 change-version
@@ -32,4 +18,4 @@ tmux-common
 action-to-remove
 print-help
 print-usage
-clone-to-app
+log-test-run-entry

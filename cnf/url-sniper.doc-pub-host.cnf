@@ -9,16 +9,16 @@ org_name=Futurice
 org_name_lc=futurice
 
 # The logging directory 
-LogDir = '%ProductInstanceDir%/dat/log'
+LogDir = %ProductInstanceDir%/dat/log
 
 # the default Log file
-LogFile =            '%LogDir%/%ProductName%.log'
+LogFile =            %LogDir%/%ProductName%.log
 # the default chars separating the time from the txt
-LogTimeToTextSeparator ='---'
+LogTimeToTextSeparator = :::
 # whether or not to log to a file
 LogToFile =          1
 # the time format of the logging 
-TimeFormat =         'YYYY.MM.DD - hh:mm:ss'
+TimeFormat =         YYYY.MM.DD - hh:mm:ss
 # the time format of the logging 
 
 # the log file
@@ -43,5 +43,5 @@ PrintDebugMsgs =                 1
 PrintTraceMsgs =                 1 
 
 # the environment name of this product instance 
-EnvironmentName =   	'%ProductName%.%ProductVersion%.%ProductType%.%ProductOwner%'
+EnvironmentName =   	%ProductName%.%ProductVersion%.%ProductType%.%ProductOwner%
 # eof file: cnf/url-sniper.doc-pub-host.cnf
